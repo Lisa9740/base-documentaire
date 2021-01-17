@@ -40,10 +40,17 @@ Pourquoi l'utiliser ?
 
 Pour permettre l'évolution des composant interne : dans le cas où on ne connaît pas à l'avance les types et dépendances précisent des objets utilisé dans le code. Mais aussi pour étendre les composant interne en redéfinissant la méthode fabrique.
 
-### Patron de conception structurel : Chaîne de responsabilité 
+### Patron de conception structurel : 
+
+- Chaîne de responsabilité :
 
 La Chaîne de responsabilité est un patron de conception comportemental qui permet de faire circuler des demandes dans une chaîne de handlers. Lorsqu’un handler reçoit une demande, il décide de la traiter ou de l’envoyer au handler suivant de la chaîne.
 
 Le patron vous propose de relier ces handlers par une chaîne. Chaque handler stocke une référence vers le prochain handler de la chaîne dans l’un de ses attributs. En plus de traiter la demande, les handlers la font passer plus loin dans la chaîne. La demande fait le tour de la chaîne jusqu’à ce que tous les handlers aient eu l’occasion de la traiter.
+
+ - Design Pattern Decorator :
+ 
+ Décorateur est un patron de conception structurel qui permet d’affecter dynamiquement de nouveaux comportements à des objets en les plaçant dans des emballeurs qui implémentent ces comportements.
+
 
 
